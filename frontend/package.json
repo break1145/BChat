@@ -1,7 +1,7 @@
 {
   "name": "frontend",
-  "version": "0.0.0",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.11",
-    "vite-plugin-vue-devtools": "^7.7.1"
+    "vite": "^6.1.0"
   }
 }
