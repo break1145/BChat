@@ -1,6 +1,6 @@
 package com.bchat.repository;
 
-import com.bchat.model.Role;
+import com.bchat.model.po.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

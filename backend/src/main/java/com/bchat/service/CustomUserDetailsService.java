@@ -1,6 +1,6 @@
 package com.bchat.service;
 
-import com.bchat.model.User;
+import com.bchat.model.po.User;
 import com.bchat.repository.UserRepository;
 import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;

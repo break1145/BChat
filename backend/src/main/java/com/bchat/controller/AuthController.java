@@ -1,17 +1,18 @@
 package com.bchat.controller;
 
 import com.bchat.model.dto.LoginDto;
-import com.bchat.model.request.RefreshTokenRequest;
-import com.bchat.model.response.JWTAuthResponse;
+import com.bchat.model.dto.RefreshTokenDTO;
+import com.bchat.common.result.Result;
+import com.bchat.model.vo.JWTAuthVO;
 import com.bchat.service.AuthService;
 import com.bchat.utils.JwtTokenProvider;
 import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import static com.bchat.common.result.ResultCodeEnum.APP_LOGIN_AUTH;
 
 @AllArgsConstructor
 @RestController
@@ -24,26 +25,24 @@ public class AuthController {
     @Resource
     private JwtTokenProvider jwtTokenProvider;
 
-    // Login REST API
     @PostMapping("/login")
-    public ResponseEntity<JWTAuthResponse> authenticate(@RequestBody LoginDto loginDto){
+    public Result<JWTAuthVO> authenticate(@RequestBody LoginDto loginDto){
         String token = authService.login(loginDto);
         log.info(loginDto.toString());
-        JWTAuthResponse jwtAuthResponse = new JWTAuthResponse();
-        jwtAuthResponse.setAccessToken(token);
+        JWTAuthVO jwtAuthResponse = new JWTAuthVO(token);
 
-        return ResponseEntity.ok(jwtAuthResponse);
+        return Result.ok(jwtAuthResponse);
     }
 
     @PostMapping("/refresh-token")
-    public ResponseEntity<?> refreshToken(@RequestBody RefreshTokenRequest refreshTokenRequest) {
+    public Result<?> refreshToken(@RequestBody RefreshTokenDTO refreshTokenRequest) {
         String refreshToken = refreshTokenRequest.getRefreshToken();
 
         if (refreshToken != null && jwtTokenProvider.validateToken(refreshToken)) {
             String newToken = jwtTokenProvider.generateTokenFromRefreshToken(refreshToken);
-            return ResponseEntity.ok(new JWTAuthResponse(newToken));
+            return Result.ok(new JWTAuthVO(newToken));
         }
 
-        return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid refresh token");
+        return Result.build("FAIL", APP_LOGIN_AUTH);
     }
 }

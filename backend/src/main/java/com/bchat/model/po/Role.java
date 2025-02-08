@@ -1,8 +1,7 @@
-package com.bchat.model;
+package com.bchat.model.po;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Data

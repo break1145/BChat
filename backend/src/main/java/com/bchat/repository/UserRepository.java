@@ -1,6 +1,6 @@
 package com.bchat.repository;
 
-import com.bchat.model.User;
+import com.bchat.model.po.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
