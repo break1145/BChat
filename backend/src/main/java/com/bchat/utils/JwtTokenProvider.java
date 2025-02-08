@@ -5,10 +5,12 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
@@ -19,14 +21,15 @@ import java.util.Date;
 @ConfigurationProperties(prefix = "app")
 @Getter
 @Setter
+@Slf4j
 public class JwtTokenProvider {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtTokenProvider.class);
 
-//    @Value("${app.jwt-secret}")
+    @Value("${app.jwt-secret}")
     private String jwtSecret;
 
-//    @Value("${app.jwt-expiration-milliseconds}")
+    @Value("${app.jwt-expiration-milliseconds}")
     private long jwtExpirationDate;
 
     // 生成 JWT token
@@ -80,4 +83,29 @@ public class JwtTokenProvider {
         }
         return false;
     }
+
+    public String generateTokenFromRefreshToken(String refreshToken) {
+        // 验证 refreshToken
+        if (!validateToken(refreshToken)) {
+            throw new IllegalArgumentException("Invalid refresh token");
+        }
+
+        // 从 refresh token 中提取用户名（或其他用户信息）
+        String username = getUsername(refreshToken);
+
+        // 根据用户名创建新的 authentication 对象
+        Authentication authentication = new UsernamePasswordAuthenticationToken(username, null, null);
+
+        // 生成新的 JWT Token（这里的过期时间可以根据需要调整）
+        Date currentDate = new Date();
+        Date expireDate = new Date(currentDate.getTime() + jwtExpirationDate);
+
+        return Jwts.builder()
+                .subject(username)
+                .issuedAt(currentDate)
+                .expiration(expireDate)
+                .signWith(key())
+                .compact();
+    }
+
 }
