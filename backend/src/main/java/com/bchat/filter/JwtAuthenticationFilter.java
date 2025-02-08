@@ -36,7 +36,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                     FilterChain filterChain) throws ServletException, IOException {
         // 从 request 获取 JWT token
         String token = getTokenFromRequest(request);
-
+        log.info("JWT token: {}", token);
+        log.info(String.valueOf(jwtTokenProvider.validateToken(token)));
         // 校验 token
         if(StringUtils.hasText(token) && jwtTokenProvider.validateToken(token)){
 
@@ -64,7 +65,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private String getTokenFromRequest(HttpServletRequest request){
 
         String bearerToken = request.getHeader("Authorization");
-
+        log.info("Authorization: {}", bearerToken);
         if(StringUtils.hasText(bearerToken) && bearerToken.startsWith("Bearer ")){
             return bearerToken.substring(7, bearerToken.length());
         }

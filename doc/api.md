@@ -27,8 +27,12 @@ POST `http://{server}/api/auth/login`
 返回值
 ```json
 {
-	"accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTAwMzIwMCwiZXhwIjoxNzM5MDAzMjAwfQ.KFkPBC3iriAy1Oh1PmEUTaFHyqFp5ZOLfHnMPZXbuCwZbqgUjMHcnjAOqwhMGu2W",
-	"tokenType": "Bearer"
+	"code": 200,
+	"message": "成功",
+	"data": {
+		"accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJicmVhayIsImlhdCI6MTczOTAyMTQzMCwiZXhwIjoxNzM5NjI2MjMwfQ.USvX4pSyGcq7ADaQcgmna1TfTJboEjzFiBmi4K_3Lo2tTEuPEdsr-zvvRLJpCZmi",
+		"tokenType": "Bearer"
+	}
 }
 ```
 
@@ -51,7 +55,9 @@ POST `http://{server}/api/auth/register`
 
 ```json
 {
-    "msg": "ok"
+	"code": 200,
+	"message": "成功",
+	"data": null
 }
 ```
 
@@ -74,7 +80,9 @@ POST `http://{server}/api/auth/refresh-token`
 
 ```json
 {
-    "msg": "ok"
+	"code": 200,
+	"message": "成功",
+	"data": null
 }
 ```
 

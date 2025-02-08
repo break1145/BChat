@@ -1,25 +1,33 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Login from '../views/Login.vue';
-import Hello from '../views/Hello.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import Login from '../views/Login.vue'
+import Home from '../views/Home.vue'
 
-Vue.use(Router);
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    }
+  ]
+})
 
-export default new Router({
-    routes: [
-        {
-            path: '/login',
-            name: 'login',
-            component: Login
-        },
-        {
-            path: '/hello',
-            name: 'hello',
-            component: Hello
-        },
-        {
-            path: '/',
-            redirect: '/login' // 默认重定向到登录页
-        }
-    ]
-});
+// 路由守卫
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('token')
+  
+  if (to.meta.requiresAuth && !token) {
+    next('/login')
+  } else {
+    next()
+  }
+})
+
+export default router

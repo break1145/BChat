@@ -513,4 +513,642 @@
 ""2025-02-08 18:11:22 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-02-08 18:11:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 ""2025-02-08 18:11:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:29:57 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 42664 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:29:57 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:29:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:29:58 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:29:58 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:29:58 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:29:58 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:29:58 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:29:58 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:29:58 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+""2025-02-08 21:29:59 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:29:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:29:59 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bf28f61
+""2025-02-08 21:29:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:30:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:30:00 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:30:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:30:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:30:01 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.078 seconds (process running for 4.619)
+""2025-02-08 21:30:04 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:30:04 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:30:04 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:30:30 INFO  [http-nio-8864-exec-4] com.bchat.controller.AuthController - 用户登录成功：break
+""2025-02-08 21:32:42 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:32:42 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:32:42 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:32:42 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:32:42 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:32:46 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 13440 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:32:46 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:32:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:32:47 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:32:47 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:32:47 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:32:47 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:32:47 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:32:47 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:32:47 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1190 ms
+""2025-02-08 21:32:48 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:32:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:32:48 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@414d2821
+""2025-02-08 21:32:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:32:49 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:32:49 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:32:50 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:32:50 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:32:50 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.048 seconds (process running for 4.549)
+""2025-02-08 21:33:01 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:33:01 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:33:01 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:33:02 INFO  [http-nio-8864-exec-5] com.bchat.controller.AuthController - 用户登录成功：admin
+""2025-02-08 21:33:42 INFO  [http-nio-8864-exec-10] com.bchat.controller.AuthController - 用户登录成功：admin
+""2025-02-08 21:34:40 ERROR [http-nio-8864-exec-4] o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'admin' for key 'users.UKr43af9ap4edm43mmtq01oddj6'
+""2025-02-08 21:34:40 ERROR [http-nio-8864-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'admin' for key 'users.UKr43af9ap4edm43mmtq01oddj6'] [insert into users (email,name,password,username) values (?,?,?,?)]; SQL [insert into users (email,name,password,username) values (?,?,?,?)]; constraint [users.UKr43af9ap4edm43mmtq01oddj6]] with root cause
+"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'admin' for key 'users.UKr43af9ap4edm43mmtq01oddj6'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1467)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy128.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:627)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
+	at com.bchat.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:56)
+	at com.bchat.controller.AuthController.register(AuthController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.bchat.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:61)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.bchat.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:61)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+"2025-02-08 21:35:27 INFO  [http-nio-8864-exec-8] com.bchat.controller.AuthController - 用户注册成功：account_xi
+""2025-02-08 21:35:30 INFO  [http-nio-8864-exec-9] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:38:05 INFO  [http-nio-8864-exec-2] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:40:43 INFO  [http-nio-8864-exec-8] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:43:55 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:43:55 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:43:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:43:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:43:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:44:00 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 36964 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:44:00 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:44:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:44:01 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:44:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:44:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:44:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:44:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:44:01 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:44:01 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+""2025-02-08 21:44:01 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:44:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:44:02 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c02b3cb
+""2025-02-08 21:44:02 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:44:02 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:44:03 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:44:03 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:44:03 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:44:03 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.068 seconds (process running for 4.554)
+""2025-02-08 21:44:08 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:44:08 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:44:08 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:44:08 INFO  [http-nio-8864-exec-1] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:46:02 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:46:02 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:46:02 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:46:02 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:46:02 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:46:05 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 39224 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:46:05 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:46:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:46:06 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:46:06 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:46:06 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:46:06 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:46:06 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:46:06 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:46:06 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1216 ms
+""2025-02-08 21:46:07 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:46:07 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:46:07 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c17794e
+""2025-02-08 21:46:07 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:46:08 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:46:08 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:46:09 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:46:09 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:46:09 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.05 seconds (process running for 4.529)
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-1] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:46:14 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:48:52 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:48:52 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:48:52 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:48:52 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:48:52 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:48:57 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 42620 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:48:57 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:48:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:48:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:48:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:48:58 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:48:58 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:48:58 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:48:58 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:48:58 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:48:58 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:48:58 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1401 ms
+""2025-02-08 21:48:59 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:48:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:48:59 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56dde9f7
+""2025-02-08 21:48:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:49:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:49:00 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:49:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:49:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:49:01 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.596 seconds (process running for 5.1)
+""2025-02-08 21:49:22 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:49:22 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:49:22 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:49:22 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:49:22 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:49:22 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:49:22 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:49:23 INFO  [http-nio-8864-exec-1] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:49:23 ERROR [http-nio-8864-exec-3] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:49:23 INFO  [http-nio-8864-exec-3] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:49:23 INFO  [http-nio-8864-exec-3] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:49:23 INFO  [http-nio-8864-exec-3] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:50:10 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:50:10 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:50:10 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:50:10 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:50:10 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:50:14 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 41960 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:50:14 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:50:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:50:14 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:50:15 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:50:15 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:50:15 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:50:15 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:50:15 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:50:15 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+""2025-02-08 21:50:15 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:50:15 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:50:15 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c02b3cb
+""2025-02-08 21:50:15 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:50:16 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:50:16 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:50:17 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:50:17 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:50:17 INFO  [main] com.bchat.MainApplication - Started MainApplication in 3.967 seconds (process running for 4.442)
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:50:22 ERROR [http-nio-8864-exec-8] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:50:22 ERROR [http-nio-8864-exec-8] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:50:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-8] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:50:23 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-1] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:50:23 INFO  [http-nio-8864-exec-1] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:51:03 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:51:03 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:51:03 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:51:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:51:03 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:51:07 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 41808 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:51:07 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:51:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:51:08 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:51:09 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:51:09 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:51:09 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:51:09 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:51:09 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:51:09 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1197 ms
+""2025-02-08 21:51:09 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:51:09 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:51:09 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54f9326c
+""2025-02-08 21:51:09 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:51:10 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:51:10 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:51:11 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:51:11 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:51:11 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.023 seconds (process running for 4.51)
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@355c32d
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:51:14 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@355c32d]
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:51:14 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:51:14 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-1] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@57ee6e44
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:51:15 ERROR [http-nio-8864-exec-2] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:51:15 INFO  [http-nio-8864-exec-2] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@20f6e51f
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - Bearer token: null
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:54:40 ERROR [http-nio-8864-exec-5] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:54:40 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:56:37 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 21:56:37 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 21:56:37 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:56:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 21:56:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 21:56:41 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 35464 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 21:56:41 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 21:56:42 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+""2025-02-08 21:56:42 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 21:56:42 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 21:56:42 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:56:42 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 21:56:42 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 21:56:42 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 21:56:42 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1186 ms
+""2025-02-08 21:56:43 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 21:56:43 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 21:56:43 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@718d6b7c
+""2025-02-08 21:56:43 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 21:56:44 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 21:56:44 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 21:56:45 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 21:56:45 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 21:56:45 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.096 seconds (process running for 4.591)
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:56:47 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:56:47 INFO  [http-nio-8864-exec-1] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:56:54 ERROR [http-nio-8864-exec-2] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:56:54 ERROR [http-nio-8864-exec-2] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-2] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-4] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-4] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:56:54 ERROR [http-nio-8864-exec-4] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-4] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-4] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:56:54 INFO  [http-nio-8864-exec-4] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:11 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:11 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:11 ERROR [http-nio-8864-exec-6] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:11 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:11 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:11 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:16 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:16 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:16 ERROR [http-nio-8864-exec-5] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:16 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:16 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:16 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:22 ERROR [http-nio-8864-exec-7] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:22 ERROR [http-nio-8864-exec-7] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:22 ERROR [http-nio-8864-exec-8] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:22 ERROR [http-nio-8864-exec-8] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-8] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 21:58:22 ERROR [http-nio-8864-exec-9] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-9] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:58:22 INFO  [http-nio-8864-exec-9] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhY2NvdW50X3hpIiwiaWF0IjoxNzM5MDIzMTAyLCJleHAiOjE3Mzk2Mjc5MDJ9.suRl76eC3nZ3D6GwTrC5S0ciq0e4qs__qVe-zsHddXHS71tNbTL6GA3ijyGT-HR5
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhY2NvdW50X3hpIiwiaWF0IjoxNzM5MDIzMTAyLCJleHAiOjE3Mzk2Mjc5MDJ9.suRl76eC3nZ3D6GwTrC5S0ciq0e4qs__qVe-zsHddXHS71tNbTL6GA3ijyGT-HR5
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - true
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhY2NvdW50X3hpIiwiaWF0IjoxNzM5MDIzMTAyLCJleHAiOjE3Mzk2Mjc5MDJ9.suRl76eC3nZ3D6GwTrC5S0ciq0e4qs__qVe-zsHddXHS71tNbTL6GA3ijyGT-HR5
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhY2NvdW50X3hpIiwiaWF0IjoxNzM5MDIzMTAyLCJleHAiOjE3Mzk2Mjc5MDJ9.suRl76eC3nZ3D6GwTrC5S0ciq0e4qs__qVe-zsHddXHS71tNbTL6GA3ijyGT-HR5
+""2025-02-08 21:59:15 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - true
+""2025-02-08 22:00:20 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:00:20 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:00:20 ERROR [http-nio-8864-exec-6] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:00:20 INFO  [http-nio-8864-exec-6] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:00:20 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:00:20 INFO  [http-nio-8864-exec-6] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:00:27 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:00:27 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:00:27 ERROR [http-nio-8864-exec-5] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:00:27 INFO  [http-nio-8864-exec-5] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:00:27 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:00:27 INFO  [http-nio-8864-exec-5] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:00:35 ERROR [http-nio-8864-exec-7] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:00:35 ERROR [http-nio-8864-exec-7] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-7] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:00:35 ERROR [http-nio-8864-exec-8] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-8] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-8] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:00:35 INFO  [http-nio-8864-exec-8] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:01:35 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:01:35 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:01:35 ERROR [http-nio-8864-exec-9] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:01:35 INFO  [http-nio-8864-exec-9] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:01:35 INFO  [http-nio-8864-exec-9] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:01:35 INFO  [http-nio-8864-exec-9] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:02:11 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 22:02:11 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 22:02:11 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 22:02:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 22:02:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2025-02-08 22:02:15 INFO  [main] com.bchat.MainApplication - Starting MainApplication using Java 22.0.1 with PID 28640 (C:\Users\break\IdeaProjects\BChatv3\backend\target\classes started by break in C:\Users\break\IdeaProjects\BChatv3)
+""2025-02-08 22:02:15 INFO  [main] com.bchat.MainApplication - No active profile set, falling back to 1 default profile: "default"
+""2025-02-08 22:02:15 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 22:02:15 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.bchat.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+""2025-02-08 22:02:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+""2025-02-08 22:02:16 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bchat]' package. Please check your configuration.
+""2025-02-08 22:02:16 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8864 (http)
+""2025-02-08 22:02:16 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8864"]
+""2025-02-08 22:02:16 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2025-02-08 22:02:16 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+""2025-02-08 22:02:16 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2025-02-08 22:02:16 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1235 ms
+""2025-02-08 22:02:16 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2025-02-08 22:02:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2025-02-08 22:02:17 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e02f17d
+""2025-02-08 22:02:17 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2025-02-08 22:02:18 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 22:02:18 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+""2025-02-08 22:02:19 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8864"]
+""2025-02-08 22:02:19 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8864 (http) with context path '/'
+""2025-02-08 22:02:19 INFO  [main] com.bchat.MainApplication - Started MainApplication in 4.297 seconds (process running for 4.769)
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:02:26 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:02:26 ERROR [http-nio-8864-exec-1] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-1] com.bchat.controller.AuthController - 用户登录成功：account_xi
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - Authorization: null
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - JWT token: null
+""2025-02-08 22:02:26 ERROR [http-nio-8864-exec-2] com.bchat.utils.JwtTokenProvider - JWT claims string is empty: CharSequence cannot be null or empty.
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-2] c.b.filter.JwtAuthenticationFilter - false
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-2] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:02:26 INFO  [http-nio-8864-exec-2] c.b.s.JwtAuthenticationEntryPoint - Full authentication is required to access this resource
+""2025-02-08 22:06:23 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2025-02-08 22:06:23 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+""2025-02-08 22:06:23 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2025-02-08 22:06:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2025-02-08 22:06:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 "
