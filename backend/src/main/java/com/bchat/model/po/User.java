@@ -1,5 +1,6 @@
 package com.bchat.model.po;
 
+import com.bchat.model.dto.RegisterDTO;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.stereotype.Repository;
@@ -10,6 +11,7 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 @Repository
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -30,5 +32,10 @@ public class User {
     )
     private Set<Role> roles;
 
-    public User() {}
+    public User(RegisterDTO registerDTO) {
+        this.email = registerDTO.getEmail();
+        this.name = registerDTO.getName();
+        this.password = registerDTO.getPassword();
+        this.username = registerDTO.getUsername();
+    }
 }

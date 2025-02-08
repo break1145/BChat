@@ -1,6 +1,8 @@
 package com.bchat.service.impl;
 
 import com.bchat.model.dto.LoginDto;
+import com.bchat.model.dto.RegisterDTO;
+import com.bchat.model.po.User;
 import com.bchat.repository.UserRepository;
 import com.bchat.service.AuthService;
 import com.bchat.utils.JwtTokenProvider;
@@ -10,11 +12,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @Service
 public class AuthServiceImpl implements AuthService {
@@ -44,12 +42,17 @@ public class AuthServiceImpl implements AuthService {
     public String login(LoginDto loginDto) {
 
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                loginDto.getUsernameOrEmail(), loginDto.getPassword()));
+                loginDto.getUsername(), loginDto.getPassword()));
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        String token = jwtTokenProvider.generateToken(authentication);
+        return jwtTokenProvider.generateToken(authentication);
+    }
 
-        return token;
+    @Override
+    public void register(RegisterDTO registerDTO) {
+        User user = new User(registerDTO);
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userRepository.save(user);
     }
 }

@@ -40,8 +40,9 @@ POST `http://{server}/api/auth/register`
 
 ```json
 {
+    "name":"旗鼓相当的对手",
     "username":"break",
-    "email":"123@gmail.com"
+    "email":"123@gmail.com",
     "password":"root",
 }
 ```
@@ -56,7 +57,7 @@ POST `http://{server}/api/auth/register`
 
 
 
-#### 3. 刷新token
+#### 3.刷新token
 
 POST `http://{server}/api/auth/refresh-token`  
 
