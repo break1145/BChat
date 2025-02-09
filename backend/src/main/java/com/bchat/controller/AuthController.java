@@ -4,6 +4,7 @@ import com.bchat.model.dto.LoginDto;
 import com.bchat.model.dto.RefreshTokenDTO;
 import com.bchat.common.result.Result;
 import com.bchat.model.dto.RegisterDTO;
+import com.bchat.model.po.User;
 import com.bchat.model.vo.JWTAuthVO;
 import com.bchat.service.AuthService;
 import com.bchat.utils.JwtTokenProvider;
@@ -34,6 +35,13 @@ public class AuthController {
         JWTAuthVO jwtAuthResponse = new JWTAuthVO(token);
         log.info("用户登录成功：" + loginDto.getUsername());
         return Result.ok(jwtAuthResponse);
+    }
+
+    @PostMapping("logout")
+    public Result<?> logout(){
+        User user = authService.logout();
+        log.info("用户退出登录：" + user.getUsername());
+        return Result.ok(user);
     }
 
     @PostMapping("/register")

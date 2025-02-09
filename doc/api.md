@@ -9,6 +9,7 @@ server: localhost:8864
 | 用户登录  | `http://{server}/api/auth/login`         | POST     |
 | 用户注册  | `http://{server}/api/auth/register`      | POST     |
 | 刷新token | `http://{server}/api/auth/refresh-token` | POST     |
+| 用户登出  | `http://{server}/api/auth/logout`        | GET      |
 
 
 
@@ -86,3 +87,8 @@ POST `http://{server}/api/auth/refresh-token`
 }
 ```
 
+#### 4.用户登出
+
+GET `http://{server}/api/auth/logout`
+
+由于使用jwt token做权限校验，登出时让前端抛弃即可，接口暂时保留（后面如果使用cookie，要做清除）

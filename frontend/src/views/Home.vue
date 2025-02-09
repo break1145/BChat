@@ -8,11 +8,14 @@ const message = ref('')
 
 const logout = async () => {
   try {
+    // 尝试调用登出接口
     await authService.logout()
+  } catch (error) {
+    console.error('Logout API error:', error)
+  } finally {
+    // 无论接口调用是否成功，都清除 token 并跳转
     localStorage.removeItem('token')
     router.push('/login')
-  } catch (error) {
-    console.error('Logout error:', error)
   }
 }
 

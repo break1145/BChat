@@ -5,6 +5,7 @@ import com.bchat.model.dto.RegisterDTO;
 import com.bchat.model.po.User;
 import com.bchat.repository.UserRepository;
 import com.bchat.service.AuthService;
+import com.bchat.utils.AuthUtil;
 import com.bchat.utils.JwtTokenProvider;
 import jakarta.annotation.Resource;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -25,6 +26,8 @@ public class AuthServiceImpl implements AuthService {
     private PasswordEncoder passwordEncoder;
     @Resource
     private JwtTokenProvider jwtTokenProvider;
+    @Resource
+    private AuthUtil authUtil;
 
 
     public AuthServiceImpl(
@@ -55,4 +58,14 @@ public class AuthServiceImpl implements AuthService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }
+
+    @Override
+    public User logout() {
+        // 由于使用jwt token做权限校验，登出时让前端抛弃即可，接口暂时保留（后面如果使用cookie，要做清除）
+        User user = authUtil.getCurrentUser();
+        return user;
+    }
+
+
+
 }
