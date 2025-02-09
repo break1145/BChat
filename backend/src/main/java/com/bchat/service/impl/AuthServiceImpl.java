@@ -61,7 +61,7 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public User logout() {
-        // 由于使用jwt token做权限校验，登出时让前端抛弃即可，接口暂时保留（后面如果使用cookie，要做清除）
+        // 由于使用jwt token做权限校验，登出时让前端抛弃即可，接口暂时保留
         User user = authUtil.getCurrentUser();
         return user;
     }
