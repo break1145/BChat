@@ -1,0 +1,52 @@
+package com.bchat.ws;
+
+import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
+import cn.hutool.core.net.url.UrlBuilder;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpHeaders;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+
+import java.net.InetSocketAddress;
+import java.util.Optional;
+
+@Slf4j
+public class  HttpHeadersHandler extends ChannelInboundHandlerAdapter {
+    @Override
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        if (msg instanceof FullHttpRequest) {
+            FullHttpRequest request = (FullHttpRequest) msg;
+            UrlBuilder urlBuilder = UrlBuilder.ofHttp(request.uri());
+
+            // 获取token参数
+            String token = Optional.ofNullable(urlBuilder.getQuery())
+                    .map(k->k.get("token"))
+                    .map(CharSequence::toString)
+                    .orElse("");
+            NettyUtil.setAttr(ctx.channel(), NettyUtil.TOKEN, token);
+
+            // 获取请求路径
+            request.setUri(urlBuilder.getPath().toString());
+            HttpHeaders headers = request.headers();
+            String JwtToken = headers.get("Authorization");
+//            InetSocketAddress address = (InetSocketAddress) ctx.channel().remoteAddress();
+            String ip = ctx.channel().remoteAddress().toString();
+            NettyUtil.setAttr(ctx.channel(), NettyUtil.IP, ip);
+
+            log.info("Netty Websocket 客户端连接成功 IP: {}", ip);
+            log.info("Netty Websocket 客户端 Token: {}", token);
+            log.info("Netty Websocket 客户端 JWT Token: {}", JwtToken);
+
+
+            ctx.pipeline().remove(this);
+            ctx.fireChannelRead(request);
+        }else
+        {
+            ctx.fireChannelRead(msg);
+        }
+    }
+}

@@ -1,4 +1,32 @@
-## 整体设计
+## 顶层设计
+
+设计参考mallchat
+
+<img src="https://cdn.nlark.com/yuque/0/2023/jpeg/26318626/1692717057362-3de0b048-1963-4a27-9d6e-bf599ea8beff.jpeg?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_54%2Ctext_TWFsbENoYXQ%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10" alt="img" style="zoom:150%;" />
+
+`WebSocket`：维护和用户的连接通道，可以接收消息，也可以推送消息，为**有状态服务**
+
+`IM服务`：负责消息的发送逻辑，处理单聊群聊的消息
+
+`Logic服务`：处理用户的心跳，上下线，联系人，加好友，创群组等逻辑
+
+`Auth服务`：处理用户认证，权限等需求
+
+`Router`：推送消息时，不同用户在不同`WebSocket`服务上，确保正确推送，与可靠推送
+
+
+
+交互的流程大致如下：
+
+1. 用户A和`WebSocket`服务建立连接。之后都通过该连接发送消息，接受消息。
+2. 用户A发送了一条群消息“在吗”，`WebSocket`服务将消息通过dubbo转发给`IM服务`，由于`IM服务`是无状态的，可以通过负载均衡随机发到某一台上。
+3. `IM服务`将消息持久化，然后将消息投递到`消息队列MQ`，这样能快速响应前端，并且mq的消费者根据负载慢慢的进行后续的推送，写扩散等操作。
+4. `消费者`会判断，根据是否热点群聊的消息做不同逻辑。如果是热点群聊，只写`热点信箱`。如果是单聊或者普通群聊，会写扩散到每个`群成员信箱`。这里假设是小群，会写入B和C的信箱。
+5. 将消息投递信箱后，需要将消息推送给用户。这里可以根据是否在线，在线的进行`WebSocket`推送，离线的进行`push通知`。由于用户的连接在不同的`WebSocket`上，需要`Router`服务推送到B和C所在的不同`WebSocket`方案有两种，后续介绍。
+6. 推送的时候需要确保消息的可靠性，如果保证一定推送成功？可能要做`应用层的ack`，类似tcp的滑动窗口确认。
+7. 用户在查询自己的会话列表的时候，需要有一个`聚合层`聚合`用户信箱`，以及`热点信箱`。再严格排序后返回给用户。所谓之`推拉结合`。
+
+
 
 ## 模块划分
 
@@ -68,5 +96,21 @@ websocket可以用tomcat或netty实现，这里使用netty。原因：
 
 
 
-websocket工作流程：
+netty启动后，要向pipeline加入一些自定义处理。
+
+- **编解码器**需要用到`HttpServerCodec`。
+-  `WebSocketServerProtocolHandler`是netty**进行websocket升级**的处理器。在这期间会抹除http相关的信息，比如请求头啥的。如果想获取相关信息，需要在这之前获取。
+- `HttpHeadersHandler`是我们自己的处理器。赶在websocket升级之前，**获取用户的ip**地址，然后保存到channel的附件里
+- `NettyWebSocketServerHandler`是我们的业务处理器，里面处理客户端的事件。
+- `IdleStateHandler`实现**心跳检测**。
+
+
+
+
+
+对于升级到websocket的请求，
+
+
+
+
 

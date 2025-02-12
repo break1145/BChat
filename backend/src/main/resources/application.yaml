@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: BChat                                       # ????
+  #
+  # MySQL
+  #
+  datasource:
+    url: jdbc:mysql://localhost:3306/bchat            # MySQL  URL
+    username: root                                    # 用户名
+    password: 123456                                  # 密码
+    driver-class-name: com.mysql.cj.jdbc.Driver       # MySQL 驱动
+
+    # HikariCP
+    hikari:
+      maximum-pool-size: 10                           # 最大连接数量
+      minimum-idle: 5                                 #
+      idle-timeout: 30000                             #
+      connection-timeout: 30000                       #
+      max-lifetime: 1800000                           #
+
+  #
+  # Redis
+  #
+  data:
+    redis:
+      host: localhost                                # Redis url
+      port: 6379                                     # Redis
+      timeout: 5000                                  #
+
+#
+# JPA 相关 Hibernate
+#
+jpa:
+  hibernate:
+    ddl-auto: update                               # 自动更新数据库 `validate`?
+  show-sql: true                                   # 显示sql
+  open-in-view: false                              # ???? Open Session In View?false ?????????????????????
+
+# 服务设置
+server:
+  port: 8864                                        # 启动端口
+
+#
+# Knife4j和SwaggerUI
+#
+knife4j:
+  enable: true                                      # 启用 Knife4j ??
+  production: false                                 # ?????????false ????????? API ???
+
+#
+# JWT 基本配置
+#
+app:
+  jwt-secret: "daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb"  # JWT key
+  jwt-expiration-milliseconds: 604800000                                          # Token 过期时间7 ??7 * 24 * 60 * 60 * 1000?
+
+# ?????????????
+#logging:
+# level:
+#   root: debug                                 # ????????? debug
